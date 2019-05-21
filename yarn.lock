@@ -109,10 +109,9 @@
   dependencies:
     tslib "^1.9.0"
 
-"@angular/cdk@^7.3.7":
-  version "7.3.7"
-  resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-7.3.7.tgz#ce1ad53ba04beb9c8e950acc5691ea0143753764"
-  integrity sha512-xbXxhHHKGkVuW6K7pzPmvpJXIwpl0ykBnvA2g+/7Sgy5Pd35wCC+UtHD9RYczDM/mkygNxMQtagyCErwFnDtQA==
+"@angular/cdk@angular/cdk-builds":
+  version "8.0.0-rc.1-0908be7"
+  resolved "https://codeload.github.com/angular/cdk-builds/tar.gz/19e9a6fa139570826e0adfe82c342f5ff3eabe92"
   dependencies:
     tslib "^1.7.1"
   optionalDependencies:
@@ -171,10 +170,9 @@
   dependencies:
     tslib "^1.9.0"
 
-"@angular/flex-layout@^8.0.0-beta.25":
-  version "8.0.0-beta.25"
-  resolved "https://registry.yarnpkg.com/@angular/flex-layout/-/flex-layout-8.0.0-beta.25.tgz#1798cd597d0991b6a2f1ab8f7f8e6875565b5681"
-  integrity sha512-0Y3BeCOCw6IbOyb+x3thPIs8LbOz8MQDX5iEPGvr3+gGVDVMIUOZw8VX/NCaRifMFRfjLf09BGDV0y3naWSYLg==
+"@angular/flex-layout@angular/flex-layout-builds":
+  version "8.0.0-beta.25-dd2c4db"
+  resolved "https://codeload.github.com/angular/flex-layout-builds/tar.gz/61536e7a0e9ab9a231901e81355246fc8ae631f4"
   dependencies:
     tslib "^1.7.1"
 

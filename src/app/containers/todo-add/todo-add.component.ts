@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { Store } from '@ngxs/store';
 import { AddTodo } from '../../actions/todo.actions';
 import { Todo } from 'src/app/models/todo.interface';
@@ -8,14 +8,12 @@ import { Todo } from 'src/app/models/todo.interface';
   templateUrl: './todo-add.component.html',
   styleUrls: ['./todo-add.component.scss']
 })
-export class TodoAddComponent implements OnInit {
+export class TodoAddComponent {
   @ViewChild('todo') todo: ElementRef;
 
   constructor(private store: Store) { }
 
-  ngOnInit() {
-  }
-
+  // Add new todo on input blur
   onBlur() {
     const title = this.todo.nativeElement.value;
     if (title) {
@@ -31,6 +29,7 @@ export class TodoAddComponent implements OnInit {
     }
   }
 
+  // Add new todo on Enter key pressed
   onKey(event: KeyboardEvent) {
     const title = this.todo.nativeElement.value;
     if (event.key === 'Enter' && title) {

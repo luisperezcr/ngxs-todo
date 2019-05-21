@@ -2,12 +2,14 @@
   <div class="todo-item" *ngFor="let todo of incompletedTodos">
     <app-todo-item
       [todo]="todo"
-      (delete)="onDelete($event)"></app-todo-item>
+      (delete)="onDelete($event)"
+      (toggle)="onToggle($event)"></app-todo-item>
   </div>
   <hr *ngIf="completedTodos.length && incompletedTodos.length">
   <div class="todo-item" *ngFor="let todo of completedTodos">
     <app-todo-item
       [todo]="todo"
-      (delete)="onDelete($event)"></app-todo-item>
+      (delete)="onDelete($event)"
+      (toggle)="onToggle($event)"></app-todo-item>
   </div>
 </div>

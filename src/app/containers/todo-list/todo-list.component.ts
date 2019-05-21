@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Todo } from '../../models/todo.interface';
 import { Select, Store } from '@ngxs/store';
 import { TodoState } from '../../state/todo.state';
-import { RemoveTodo } from '../../actions/todo.actions';
+import { RemoveTodo, ToggleTodo } from '../../actions/todo.actions';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -35,5 +35,9 @@ export class TodoListComponent implements OnInit {
 
   onDelete(id: number) {
     this.store.dispatch(new RemoveTodo(id));
+  }
+
+  onToggle(data: { id: number, completed: boolean }) {
+    this.store.dispatch(new ToggleTodo({ id: data.id, completed: data.completed }));
   }
 }

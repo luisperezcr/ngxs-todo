@@ -13,9 +13,16 @@ export class TodoItemComponent {
   @Output()
   delete: EventEmitter<number> = new EventEmitter<number>();
 
+  @Output()
+  toggle: EventEmitter<{ id: number, completed: boolean }> = new EventEmitter<{ id: number, completed: boolean }>();
+
   constructor() { }
 
   onDelete() {
     this.delete.emit(this.todo.id);
+  }
+
+  onChange() {
+    this.toggle.emit({ id: this.todo.id, completed: !this.todo.completed });
   }
 }

@@ -1,5 +1,5 @@
 <div class="item-wrapper" [ngClass]="{ 'completed': todo.completed }" fxLayoutAlign="start center" fxLayoutGap="10px">
-  <mat-checkbox color="primary" [checked]="todo.completed"></mat-checkbox>
+  <mat-checkbox color="primary" [checked]="todo.completed" (change)="onChange()"></mat-checkbox>
   <span fxFlex>{{ todo.title }}</span>
   <button class="edit-button" mat-icon-button color="primary">
     <mat-icon aria-label="Edit todo">edit</mat-icon>

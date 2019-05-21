@@ -1,3 +1,11 @@
-<p>
-  todo-add works!
-</p>
+<div class="input-wrapper">
+  <mat-form-field>
+    <input
+      matInput
+      placeholder="New Todo"
+      color="primary"
+      #todo
+      (blur)="onBlur(todo.value)"
+      (keyup)="onKey($event, todo.value)">
+  </mat-form-field>
+</div>

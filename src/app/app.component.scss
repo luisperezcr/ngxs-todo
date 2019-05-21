@@ -19,6 +19,7 @@ app-todo-list, app-todo-add {
   width: 100%;
 }
 
+// Responsiveness for mobile devices
 @media screen and (max-width: 425px) {
   .todo-wrapper {
     width: 90%;

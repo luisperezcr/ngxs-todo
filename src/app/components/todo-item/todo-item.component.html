@@ -1,7 +1,11 @@
-<div class="item-wrapper" [ngClass]="{ 'completed': todo.completed }" fxLayoutAlign="start center" fxLayoutGap="10px">
+<div *ngIf="!isEditing" class="item-wrapper" [ngClass]="{ 'completed': todo.completed }" fxLayoutAlign="start center" fxLayoutGap="10px">
   <mat-checkbox color="primary" [checked]="todo.completed" (change)="onChange()"></mat-checkbox>
   <span fxFlex>{{ todo.title }}</span>
-  <button class="edit-button" mat-icon-button color="primary">
+  <button
+    class="edit-button"
+    mat-icon-button
+    color="primary"
+    (click)="onEditToggle()">
     <mat-icon aria-label="Edit todo">edit</mat-icon>
   </button>
   <button
@@ -12,3 +16,9 @@
     <mat-icon aria-label="Delete todo">delete</mat-icon>
   </button>
 </div>
+
+<app-todo-edit
+  *ngIf="isEditing"
+  [todo]="todo"
+  (cancel)="onCancel()"
+  (edit)="onEdit($event)"></app-todo-edit>

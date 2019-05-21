@@ -16,13 +16,31 @@ export class TodoItemComponent {
   @Output()
   toggle: EventEmitter<{ id: number, completed: boolean }> = new EventEmitter<{ id: number, completed: boolean }>();
 
+  @Output()
+  edit: EventEmitter<{ id: number, title: string }> = new EventEmitter<{ id: number, title: string }>();
+
+  isEditing = false;
+
   constructor() { }
 
   onDelete() {
     this.delete.emit(this.todo.id);
   }
 
+  onEditToggle() {
+    this.isEditing = true;
+  }
+
   onChange() {
     this.toggle.emit({ id: this.todo.id, completed: !this.todo.completed });
+  }
+
+  onCancel() {
+    this.isEditing = false;
+  }
+
+  onEdit(payload: { id: number, title: string }) {
+    this.edit.emit({ id: payload.id, title: payload.title });
+    this.isEditing = false;
   }
 }

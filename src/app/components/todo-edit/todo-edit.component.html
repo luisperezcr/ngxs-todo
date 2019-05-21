@@ -1,3 +1,16 @@
-<p>
-  todo-edit works!
-</p>
+<div class="input-wrapper" fxLayoutAlign="start center" fxLayoutGap="5px">
+  <mat-form-field fxFlex>
+    <input
+      matInput
+      color="primary"
+      #todo
+      (blur)="onBlur()"
+      (keyup)="onKeyup($event)">
+  </mat-form-field>
+  <button
+    class="cancel-button"
+    mat-icon-button
+    (click)="onCancel()">
+    <mat-icon aria-label="Cancel editing">close</mat-icon>
+  </button>
+</div>

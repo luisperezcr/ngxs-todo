@@ -7,16 +7,16 @@ main {
   padding: 1em 0;
 }
 
-app-todo-list, app-todo-add {
-  width: 100%;
-}
-
 .todo-wrapper h1 {
   color: #0D47A1;
   font-weight: lighter;
   text-align: center;
   font-size: 3em;
   margin: 0 0 24px;
+}
+
+app-todo-list, app-todo-add {
+  width: 100%;
 }
 
 @media screen and (max-width: 425px) {

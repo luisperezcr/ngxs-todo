@@ -12,13 +12,15 @@ import { TodoListComponent } from './containers/todo-list/todo-list.component';
 import { TodoItemComponent } from './components/todo-item/todo-item.component';
 import { MaterialModule } from './shared/material.module';
 import { TodoAddComponent } from './containers/todo-add/todo-add.component';
+import { TodoEditComponent } from './components/todo-edit/todo-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoListComponent,
     TodoItemComponent,
-    TodoAddComponent
+    TodoAddComponent,
+    TodoEditComponent
   ],
   imports: [
     BrowserModule,

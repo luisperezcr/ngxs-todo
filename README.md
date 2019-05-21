@@ -7,6 +7,7 @@ This project is a simple todo app built with Angular, using Ngxs for state manag
 * Ngxs (state management)
 * Flex Layout
 * Angular Material
+* Firebase Hosting
 
 ## Take a look
 You can see the app [here](https://gd-simple-todos.firebaseapp.com/).

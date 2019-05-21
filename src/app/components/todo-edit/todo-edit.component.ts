@@ -24,6 +24,7 @@ export class TodoEditComponent implements OnInit {
     this.todoRef.nativeElement.value = this.todo.title;
   }
 
+  // Emits edit event on input blur
   onBlur() {
     const title = this.todoRef.nativeElement.value;
     if (title) {
@@ -33,6 +34,7 @@ export class TodoEditComponent implements OnInit {
     }
   }
 
+  // Emits edit event on Enter key pressed
   onKeyup(event: KeyboardEvent) {
     const title = this.todoRef.nativeElement.value;
     if (event.key === 'Enter' && title) {
@@ -42,6 +44,7 @@ export class TodoEditComponent implements OnInit {
     }
   }
 
+  // Emit cancel event on cancel button clicked
   onCancel() {
     this.todoRef.nativeElement.value = '';
     this.cancel.emit(true);

@@ -4,7 +4,11 @@
   <button class="edit-button" mat-icon-button color="primary">
     <mat-icon aria-label="Edit todo">edit</mat-icon>
   </button>
-  <button class="delete-button" mat-icon-button color="primary">
+  <button
+    class="delete-button"
+    mat-icon-button
+    color="primary"
+    (click)="onDelete()">
     <mat-icon aria-label="Delete todo">delete</mat-icon>
   </button>
 </div>

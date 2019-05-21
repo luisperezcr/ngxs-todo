@@ -19,6 +19,8 @@ app-todo-list, app-todo-add {
   margin: 0 0 24px;
 }
 
-mat-toolbar {
-  width: 100%;
+@media screen and (max-width: 425px) {
+  .todo-wrapper {
+    width: 90%;
+  }
 }

@@ -8,20 +8,20 @@ export class TodoStateModel {
 
 const initialState: Todo[] = [
   {
-    title: 'Create an awesome todo app',
     id: 1,
+    title: 'Create an awesome todo app',
     completed: true,
     editing: false
   },
   {
-    title: 'Drink coffee',
     id: 2,
+    title: 'Drink coffee',
     completed: true,
     editing: false
   },
   {
-    title: 'Sleep (?)',
     id: 3,
+    title: 'Sleep (?)',
     completed: false,
     editing: false
   }

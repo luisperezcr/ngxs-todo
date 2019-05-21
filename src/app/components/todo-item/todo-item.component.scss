@@ -1,0 +1,20 @@
+.item-wrapper {
+  margin-top: 5px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #BDBDBD;
+}
+
+button[mat-icon-button] {
+  color: #BDBDBD;
+}
+
+.edit-button:hover, .edit-button:active {
+  color: #0D47A1;
+}
+
+.delete-button:hover, .delete-button:active {
+  color: #D32F2F;
+}

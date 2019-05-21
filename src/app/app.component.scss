@@ -1,0 +1,20 @@
+main {
+  width: 100%;
+}
+
+.todo-wrapper {
+  width: 500px;
+  padding: 1em 0;
+}
+
+app-todo-list {
+  width: 100%;
+}
+
+.todo-wrapper h1 {
+  color: #0D47A1;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 3em;
+  margin: 0 0 24px;
+}

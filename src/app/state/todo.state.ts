@@ -6,6 +6,11 @@ export class TodoStateModel {
   todos: Todo[];
 }
 
+/**
+ * Initial State
+ *
+ * In case you want to start with no todos or add more, this is the place
+ */
 const initialState: Todo[] = [
   {
     id: 1,

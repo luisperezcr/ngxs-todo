@@ -42,7 +42,6 @@ export class TodoListComponent implements OnInit {
   }
 
   onEdit(payload: { id: number, title: string }) {
-    console.log('asdasd');
     this.store.dispatch(new ModifyTodo({ id: payload.id, title: payload.title }));
   }
 }
